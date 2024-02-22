@@ -1,0 +1,7 @@
+1. Some classes add special abiliteis that the player can choose (e.g. Dragonborn - Draconic Ancestry). 
+2. Need to add in Dwarven Toughness for Hill Dwarces (once hit point section is finished) 
+3. Bards - Let user choose 3 instruments for proficiencies
+4. Dwarves - Choose tool proficiencies
+4. Allow users to select skill proficiencies
+5. Allow users to choose starting equipment
+6. Spells/Cantrips

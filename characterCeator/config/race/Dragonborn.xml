@@ -1,0 +1,8 @@
+<Dragonborn>
+    <Stats>
+        <charSize value="Medium" />
+        <baseSpeed value="30" />
+        <strength value="2" />
+        <charisma value="1" />
+    </Stats>
+</Dragonborn>

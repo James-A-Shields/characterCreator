@@ -1,0 +1,24 @@
+<Hilldwarf>
+    <Stats>
+        <charSize value="Medium" />
+        <baseSpeed value="25" />
+        <constitution value="2" />
+	<wisdom value="1" />
+    </Stats>
+    <Traits>
+	<trait>Not Slowed by Heavy Armour</trait>
+	<trait>Darkvision</trait>
+	<trait>Dwarves Resilience</trait>
+    </Traits>
+    <Proficiencies>
+	<proficiency>Battleaxe</proficiency>
+	<proficiency>Handaxe</proficiency>
+	<proficiency>Light Hammer</proficiency>
+	<proficiency>Warhammer</proficiency>
+	<proficiency>Stonecunning</proficiency>
+    </Proficiencies>
+    <Languages>
+	<language>Common</language>
+	<language>Dwarven</language>
+    </Languages>
+</Hilldwarf>

@@ -1,0 +1,33 @@
+<Barbarian>
+    <Stats>
+        <hitDicePerLevel value="1" />
+        <levelOneHealth value="12" />
+	<hitDiceType value="12" />
+    </Stats>
+    <Proficiencies count="5">
+        <proficiency>Light Armour</proficiency>
+        <proficiency>Medium Armour</proficiency>
+        <proficiency>Shields</proficiency>
+        <proficiency>Simple Weapons</proficiency>
+        <proficiency>Martial Weapons</proficiency>
+    </Proficiencies>
+    <SavingThrows count="2">
+        <savingThrow>Strength</savingThrow>
+        <savingThrow>Constitution</savingThrow>
+    </SavingThrows>
+    <Feats count="13">
+        <feat>Rage</feat>
+        <feat>Unarmored Defence</feat>
+        <feat>Danger Sense(lvl 2)</feat>
+        <feat>Primal Path(lvl 3)</feat>
+        <feat>Ability Score Improvement(lvl 4, 8, 12, 16, 19)</feat>
+        <feat>Extra Attack(lvl 5)</feat>
+        <feat>Fast Movement(lvl 5)</feat>
+        <feat>Feral Instinct(lvl 7)</feat>
+        <feat>Brutal Critical(lvl 9)</feat>
+        <feat>Relentless Rage(lvl 11)</feat>
+        <feat>Brutal Critical(lvl 13)</feat>
+        <feat>Indomitable Might(lvl 18)</feat>
+        <feat>Primal Champion(lvl 20)</feat>
+    </Feats>
+</Barbarian>

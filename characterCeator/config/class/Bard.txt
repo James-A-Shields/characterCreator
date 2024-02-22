@@ -1,0 +1,34 @@
+<Bard>
+    <Stats>
+        <hitDicePerLevel value="1" />
+        <levelOneHealth value="8" />
+	<hitDiceType value="8" />
+    </Stats>
+    <Proficiencies count="5">
+        <proficiency>Light Armour</proficiency>
+        <proficiency>Simple Weapons</proficiency>
+        <proficiency>Hand Crossbows</proficiency>
+	<proficiency>Longswords</proficiency>
+	<proficiency>Rapiers</proficiency>
+	<proficiency>Shortswords</proficiency>
+    </Proficiencies>
+    <SavingThrows count="2">
+        <savingThrow>Dexterity</savingThrow>
+        <savingThrow>Charisma</savingThrow>
+    </SavingThrows>
+    <Feats count="13">
+        <feat>Bardic Inspiration</feat>
+        <feat>Jack of All Trades (lvl 2)</feat>
+        <feat>Song of Rest(lvl 2)</feat>
+        <feat>Bard College(lvl 3)</feat>
+	<feat>Expertise(lvl 3)</feat>
+        <feat>Ability Score Improvement(lvl 4, 8, 12, 16, 19)</feat>
+        <feat>Font of Inspiration(lvl 5)</feat>
+        <feat>Countercharm(lvl 6)</feat>
+        <feat>Expertise(lvl 10)</feat>
+        <feat>Magical Secrets(lvl 10)</feat>
+        <feat>Magical Secrets(lvl 14)</feat>
+        <feat>Magical secrets(lvl 18)</feat>
+        <feat>Superior Inspiration(lvl 20)</feat>
+    </Feats>
+</Bard>
