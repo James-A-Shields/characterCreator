@@ -3,6 +3,8 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="ageAndLevelFunctions.cpp"/>
+    <File Name="ageAndLevelFunctions.h"/>
     <File Name="fileFunctions.cpp"/>
     <File Name="fileFunctions.h"/>
     <File Name="classAndRaceFunctions.cpp"/>

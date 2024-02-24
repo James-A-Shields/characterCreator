@@ -1,1 +1,1 @@
-Debug/main.cpp.o Debug/pugixml.cpp.o Debug/generalFunctions.cpp.o Debug/UIFunctions.cpp.o Debug/abilityFunctions.cpp.o Debug/nameFunctions.cpp.o Debug/classAndRaceFunctions.cpp.o Debug/Character.cpp.o Debug/fileFunctions.cpp.o
+Debug/main.cpp.o Debug/generalFunctions.cpp.o Debug/UIFunctions.cpp.o Debug/nameFunctions.cpp.o Debug/pugixml.cpp.o Debug/classAndRaceFunctions.cpp.o Debug/Character.cpp.o Debug/abilityFunctions.cpp.o Debug/ageAndLevelFunctions.cpp.o Debug/fileFunctions.cpp.o
