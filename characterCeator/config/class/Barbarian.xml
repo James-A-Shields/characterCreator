@@ -4,18 +4,18 @@
         <levelOneHealth value="12" />
 	<hitDiceType value="12" />
     </Stats>
-    <Proficiencies count="5">
+    <Proficiencies>
         <proficiency>Light Armour</proficiency>
         <proficiency>Medium Armour</proficiency>
         <proficiency>Shields</proficiency>
         <proficiency>Simple Weapons</proficiency>
         <proficiency>Martial Weapons</proficiency>
     </Proficiencies>
-    <SavingThrows count="2">
+    <SavingThrows>
         <savingThrow>Strength</savingThrow>
         <savingThrow>Constitution</savingThrow>
     </SavingThrows>
-    <Feats count="13">
+    <Feats>
         <feat>Rage</feat>
         <feat>Unarmored Defence</feat>
         <feat>Danger Sense(lvl 2)</feat>

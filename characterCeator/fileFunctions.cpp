@@ -124,21 +124,16 @@ void update_character_stats_from_file(Character& c, std::ifstream& in_file, cons
             pugi::xml_node traitsNode = root.child("Traits");
             if(traitsNode)
             {
-                int count = traitsNode.attribute("count").as_int();
-                for (int i = 0; i < count; ++i) 
+
+                for (pugi::xml_node traitNode = traitsNode.child("trait"); traitNode; traitNode = traitNode = traitNode.next_sibling("trait")) 
                 {
-                    pugi::xml_node traitNode = traitsNode.child("trait");
-                    if (traitNode) 
-                    {
-                        c.traits.push_back(traitNode.child_value());
-                    }
+                    c.traits.push_back(traitNode.child_value());
                 } 
             }
             
             pugi::xml_node proficienciesNode = root.child("Proficiencies");
             if(proficienciesNode)
             {
-                int count = proficienciesNode.attribute("count").as_int();
                 for (pugi::xml_node proficiencyNode = proficienciesNode.child("proficiency"); proficiencyNode; proficiencyNode = proficiencyNode.next_sibling("proficiency"))
                 {
                     c.proficiencies.push_back(proficiencyNode.child_value());
@@ -148,14 +143,9 @@ void update_character_stats_from_file(Character& c, std::ifstream& in_file, cons
             pugi::xml_node languagesNode = root.child("Languages");
             if(languagesNode)
             {
-                int count = languagesNode.attribute("count").as_int();
-                for (int i = 0; i < count; ++i)
+                for (pugi::xml_node languageNode = languagesNode.child("language"); languageNode; languageNode = languageNode.next_sibling("language"))
                 {
-                    pugi::xml_node languageNode = languagesNode.child("language");
-                    if(languageNode)
-                    {
-                        c.languages.push_back(languageNode.child_value());
-                    }
+                    c.languages.push_back(languageNode.child_value());
                 }
             }
             
@@ -171,7 +161,6 @@ void update_character_stats_from_file(Character& c, std::ifstream& in_file, cons
             pugi::xml_node featsNode = root.child("Feats");
                 if (featsNode)
                 {
-                    int count = featsNode.attribute("count").as_int();
                     for (pugi::xml_node featNode = featsNode.child("feat"); featNode; featNode = featNode.next_sibling("feat"))
                     {
                         c.feats.push_back(featNode.child_value());
