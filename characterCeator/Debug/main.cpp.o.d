@@ -1,10 +1,6 @@
-Debug/main.cpp.o: main.cpp pugixml.hpp pugiconfig.hpp Character.h \
-  generalFunctions.h UIFunctions.h nameFunctions.h abilityFunctions.h \
-  classAndRaceFunctions.h fileFunctions.h ageAndLevelFunctions.h
-
-pugixml.hpp:
-
-pugiconfig.hpp:
+Debug/main.cpp.o: main.cpp Character.h generalFunctions.h UIFunctions.h \
+  nameFunctions.h abilityFunctions.h classAndRaceFunctions.h pugixml.hpp \
+  pugiconfig.hpp fileFunctions.h ageAndLevelFunctions.h
 
 Character.h:
 
@@ -17,6 +13,10 @@ nameFunctions.h:
 abilityFunctions.h:
 
 classAndRaceFunctions.h:
+
+pugixml.hpp:
+
+pugiconfig.hpp:
 
 fileFunctions.h:
 

@@ -14,7 +14,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=James Shields
-Date                   :=24/02/2024
+Date                   :=25/02/2024
 CodeLitePath           :="/Users/jamesshields/Library/Application Support/CodeLite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -62,7 +62,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/generalFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/UIFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/nameFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/pugixml.cpp$(ObjectSuffix) $(IntermediateDirectory)/classAndRaceFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/Character.cpp$(ObjectSuffix) $(IntermediateDirectory)/abilityFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/ageAndLevelFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/fileFunctions.cpp$(ObjectSuffix) \
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/generalFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/nameFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/pugixml.cpp$(ObjectSuffix) $(IntermediateDirectory)/abilityFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/classAndRaceFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/ageAndLevelFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/fileFunctions.cpp$(ObjectSuffix) $(IntermediateDirectory)/Character.cpp$(ObjectSuffix) $(IntermediateDirectory)/UIFunctions.cpp$(ObjectSuffix) \
 	
 
 
@@ -106,12 +106,6 @@ $(IntermediateDirectory)/generalFunctions.cpp$(ObjectSuffix): generalFunctions.c
 $(IntermediateDirectory)/generalFunctions.cpp$(PreprocessSuffix): generalFunctions.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/generalFunctions.cpp$(PreprocessSuffix) generalFunctions.cpp
 
-$(IntermediateDirectory)/UIFunctions.cpp$(ObjectSuffix): UIFunctions.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UIFunctions.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UIFunctions.cpp$(DependSuffix) -MM UIFunctions.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jamesshields/Documents/repos/characterCreator/characterCeator/UIFunctions.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UIFunctions.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/UIFunctions.cpp$(PreprocessSuffix): UIFunctions.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UIFunctions.cpp$(PreprocessSuffix) UIFunctions.cpp
-
 $(IntermediateDirectory)/nameFunctions.cpp$(ObjectSuffix): nameFunctions.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/nameFunctions.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/nameFunctions.cpp$(DependSuffix) -MM nameFunctions.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jamesshields/Documents/repos/characterCreator/characterCeator/nameFunctions.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/nameFunctions.cpp$(ObjectSuffix) $(IncludePath)
@@ -124,23 +118,17 @@ $(IntermediateDirectory)/pugixml.cpp$(ObjectSuffix): pugixml.cpp
 $(IntermediateDirectory)/pugixml.cpp$(PreprocessSuffix): pugixml.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/pugixml.cpp$(PreprocessSuffix) pugixml.cpp
 
-$(IntermediateDirectory)/classAndRaceFunctions.cpp$(ObjectSuffix): classAndRaceFunctions.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/classAndRaceFunctions.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/classAndRaceFunctions.cpp$(DependSuffix) -MM classAndRaceFunctions.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jamesshields/Documents/repos/characterCreator/characterCeator/classAndRaceFunctions.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/classAndRaceFunctions.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/classAndRaceFunctions.cpp$(PreprocessSuffix): classAndRaceFunctions.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/classAndRaceFunctions.cpp$(PreprocessSuffix) classAndRaceFunctions.cpp
-
-$(IntermediateDirectory)/Character.cpp$(ObjectSuffix): Character.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Character.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Character.cpp$(DependSuffix) -MM Character.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jamesshields/Documents/repos/characterCreator/characterCeator/Character.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Character.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Character.cpp$(PreprocessSuffix): Character.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Character.cpp$(PreprocessSuffix) Character.cpp
-
 $(IntermediateDirectory)/abilityFunctions.cpp$(ObjectSuffix): abilityFunctions.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/abilityFunctions.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/abilityFunctions.cpp$(DependSuffix) -MM abilityFunctions.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jamesshields/Documents/repos/characterCreator/characterCeator/abilityFunctions.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/abilityFunctions.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/abilityFunctions.cpp$(PreprocessSuffix): abilityFunctions.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/abilityFunctions.cpp$(PreprocessSuffix) abilityFunctions.cpp
+
+$(IntermediateDirectory)/classAndRaceFunctions.cpp$(ObjectSuffix): classAndRaceFunctions.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/classAndRaceFunctions.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/classAndRaceFunctions.cpp$(DependSuffix) -MM classAndRaceFunctions.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jamesshields/Documents/repos/characterCreator/characterCeator/classAndRaceFunctions.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/classAndRaceFunctions.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/classAndRaceFunctions.cpp$(PreprocessSuffix): classAndRaceFunctions.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/classAndRaceFunctions.cpp$(PreprocessSuffix) classAndRaceFunctions.cpp
 
 $(IntermediateDirectory)/ageAndLevelFunctions.cpp$(ObjectSuffix): ageAndLevelFunctions.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ageAndLevelFunctions.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ageAndLevelFunctions.cpp$(DependSuffix) -MM ageAndLevelFunctions.cpp
@@ -153,6 +141,18 @@ $(IntermediateDirectory)/fileFunctions.cpp$(ObjectSuffix): fileFunctions.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jamesshields/Documents/repos/characterCreator/characterCeator/fileFunctions.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/fileFunctions.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/fileFunctions.cpp$(PreprocessSuffix): fileFunctions.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/fileFunctions.cpp$(PreprocessSuffix) fileFunctions.cpp
+
+$(IntermediateDirectory)/Character.cpp$(ObjectSuffix): Character.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Character.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Character.cpp$(DependSuffix) -MM Character.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jamesshields/Documents/repos/characterCreator/characterCeator/Character.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Character.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Character.cpp$(PreprocessSuffix): Character.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Character.cpp$(PreprocessSuffix) Character.cpp
+
+$(IntermediateDirectory)/UIFunctions.cpp$(ObjectSuffix): UIFunctions.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UIFunctions.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UIFunctions.cpp$(DependSuffix) -MM UIFunctions.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/jamesshields/Documents/repos/characterCreator/characterCeator/UIFunctions.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UIFunctions.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/UIFunctions.cpp$(PreprocessSuffix): UIFunctions.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UIFunctions.cpp$(PreprocessSuffix) UIFunctions.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
