@@ -8,7 +8,8 @@
     <Traits>
 	<trait>Not Slowed by Heavy Armour</trait>
 	<trait>Darkvision</trait>
-	<trait>Dwarves Resilience</trait>
+	<trait>Dwarven Resilience</trait>
+	<trait>Dwarven Toughness</trait>
     </Traits>
     <Proficiencies>
 	<proficiency>Battleaxe</proficiency>

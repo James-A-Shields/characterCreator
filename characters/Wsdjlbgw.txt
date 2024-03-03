@@ -1,0 +1,59 @@
+Name: Wsdjlbgw
+Age: 1
+Race: Hilldwarf
+Class: Barbarian
+Size: Medium
+Level: 1
+XP: 0
+HP: 15
+Max HP: 0
+Hit Dice: 1/1d12
+Base Speed: 25
+AC: 0
+Strength: 8
+Dexterity: 14
+Constitution: 15
+Intelligence: 13
+Wisdom: 13
+Charisma: 12
+
+Proficiencies:
+Battleaxe
+Handaxe
+Light Hammer
+Warhammer
+Stonecunning
+Light Armour
+Medium Armour
+Shields
+Simple Weapons
+Martial Weapons
+
+Languages:
+Common
+Dwarven
+
+Traits:
+Not Slowed by Heavy Armour
+Darkvision
+Dwarven Resilience
+Dwarven Toughness
+
+Feats:
+Rage
+Unarmored Defence
+Danger Sense(lvl 2)
+Primal Path(lvl 3)
+Ability Score Improvement(lvl 4, 8, 12, 16, 19)
+Extra Attack(lvl 5)
+Fast Movement(lvl 5)
+Feral Instinct(lvl 7)
+Brutal Critical(lvl 9)
+Relentless Rage(lvl 11)
+Brutal Critical(lvl 13)
+Indomitable Might(lvl 18)
+Primal Champion(lvl 20)
+
+Saving Throws:
+Strength
+Constitution

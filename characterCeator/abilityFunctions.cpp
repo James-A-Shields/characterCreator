@@ -83,16 +83,21 @@ void set_ability_scores(Character& c, std::vector<int> abilityScores, std::vecto
         {
             std::cout << "Which score would you like to assign to " << ability << "?" << std::endl
                       << "Enter the score here: ";
-            std::cin >> abilityScoreChoice;
-            validChoice = check_if_in_vector(abilityScoreChoice, abilityScores);
-            
-            if(validChoice != true)
+            if (!(std::cin >> abilityScoreChoice)) 
             {
-                std::cout << std::endl << std::endl << "Invalid entry, please try again." << std::endl << std::endl;
+                std::cin.clear();  // Clear the error flag
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // Discard invalid input
+                validChoice = false;
+            }       
+            else 
+            {
+                validChoice = check_if_in_vector(abilityScoreChoice, abilityScores);
+                if (!validChoice) 
+                {
+                    std::cout << std::endl << "Invalid entry, please try again." << std::endl << std::endl;
+                }
             }
-            
-        }while (!validChoice); 
-        
+        } while (!validChoice);
         *abilityMap[ability] = abilityScoreChoice;
         // Find used ability score in the vector
         auto it = std::find(abilityScores.begin(), abilityScores.end(), abilityScoreChoice);
