@@ -6,3 +6,5 @@
 5. Allow users to choose starting equipment
 6. Spells/Cantrips
 7. Fix languages, traits etc. from race files.
+8. Stop people adding level 0 or over 20.
+9. Fix infinite loop if level is a or age is nogt a number

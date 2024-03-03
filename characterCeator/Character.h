@@ -55,7 +55,6 @@ struct Character
     std::vector<std::string> traits;
     std::vector<std::string> feats;
     std::vector<std::string> savingThrows;
-    std::vector<std::string> abilities;
 
 
     //Constructor & Destructor

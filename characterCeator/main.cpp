@@ -1,14 +1,13 @@
 //A character creation tool for DnD.
-#include<iostream>
 #include<string>
 #include<map>
 #include<vector>
 
-//Classes
+//Structs
 #include"Character.h"
+#include"vectorsMapsEtc.h"
 
 //Functions
-#include"generalFunctions.h"
 #include"UIFunctions.h"
 #include"nameFunctions.h"
 #include"abilityFunctions.h"
@@ -19,11 +18,6 @@
 //Main
 int main()
 {
-    // Vectors, Variables etc.
-    std::vector<std::string> abilities{"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"};
-    
-    std::vector<int> standardArray {15, 14, 13, 12, 10, 8};
-    
     // Title
     display_title();
     dividing_line();
@@ -42,15 +36,7 @@ int main()
     
     // Abilities
     bool abilitiesDone = false;
-    std::map<std::string, int*> abilityMap = 
-    {
-        {"Strength", &c.strength},
-        {"Dexterity", &c.dexterity},
-        {"Constitution", &c.constitution},
-        {"Intelligence", &c.intelligence},
-        {"Wisdom", &c.wisdom},
-        {"Charisma", &c.charisma}
-    };
+    std::map<std::string, int*> abilityMap = createAbilityMap(c);
     
     display_ability_menu();
     ability_menu_selection(abilityMap, abilitiesDone, abilities, standardArray, c);

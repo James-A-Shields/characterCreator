@@ -115,8 +115,21 @@ void update_character_stats_from_file(Character& c, std::ifstream& in_file, cons
                 
                 if (c.lvl > 1)
                 {
-                    c.hp = (dice_roll(c.lvl - 1, c.hitDiceType)) + ((c.constitution - 10)/2);
+                    pugi::xml_node levelOneHealthNode = statsNode.child("levelOneHealth"); //Checks if levelOneHealth node is present
+                    if(levelOneHealthNode)                                                 //(makes sure health is only worked out when reading class file)
+                    {
+                        c.hp = (dice_roll(c.lvl - 1, c.hitDiceType)) + ((c.constitution - 10)/2);
+                    }
                     
+                }
+                
+                if (c.race == "Hilldwarf")
+                {
+                    pugi::xml_node levelOneHealthNode = statsNode.child("levelOneHealth"); //Checks if levelOneHealth node is present
+                    if(levelOneHealthNode)                                                 //(makes sure health is only worked out when reading class file)
+                    {
+                        c.hp += c.lvl;
+                    }
                 }
                 
             }
@@ -211,31 +224,29 @@ void write_character_txt(Character& c)
     {
         out_file << p << std::endl;
     }
+    
     out_file << "\nLanguages:" << std::endl;
     for(auto l : c.languages)
     {
         out_file << l << std::endl;
     }
+    
     out_file << "\nTraits:" << std::endl;
     for(auto t : c.traits)
     {
         out_file << t << std::endl;
     }
+    
     out_file << "\nFeats:" << std::endl;
     for(auto f : c.feats)
     {
         out_file << f << std::endl;
     }
+    
     out_file << "\nSaving Throws:" << std::endl;
     for(auto st : c.savingThrows)
     {
         out_file << st << std::endl;
     }
-    out_file << "\nAbilities:" << std::endl;
-    for(auto a : c.abilities)
-    {
-        out_file << a << std::endl;
-    }
-    
     out_file.close();
 }
