@@ -26,14 +26,4 @@
             {"Charisma", &c.charisma}
         };
     };
-//    std::map<std::string, int*> abilityMap = 
-//    {
-//        {"Strength", &c.strength},
-//        {"Dexterity", &c.dexterity},
-//        {"Constitution", &c.constitution},
-//        {"Intelligence", &c.intelligence},
-//        {"Wisdom", &c.wisdom},
-//        {"Charisma", &c.charisma}
-//    };
-
 #endif //VECTORS_MAPS_ETC_H
