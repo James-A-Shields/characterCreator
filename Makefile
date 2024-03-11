@@ -1,6 +1,7 @@
 # Relative paths
 PROJECT_ROOT := .
-BUILD_DIR := $(PROJECT_ROOT)/build-$(CONFIG)/bin
+SOURCE_DIR := $(PROJECT_ROOT)/characterCeator
+BUILD_DIR := $(PROJECT_ROOT)/characterCeator/build-$(CONFIG)/bin
 
 # Compiler and flags
 CC := g++
